@@ -1,7 +1,8 @@
-// postcss.config.js - 正确版本 ✅
-module.exports = {
+// postcss.config.mjs
+/** @type {import('postcss').PostcssConfig} */
+export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    '@tailwindcss/postcss': {},
+    'autoprefixer': {},
   },
 }
